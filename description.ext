@@ -1,0 +1,64 @@
+corpseLimit = 300;
+corpseRemovalMaxTime = 10000;
+wreckLimit = 300;
+wreckRemovalMaxTime = 10000;
+
+forceRotorLibSimulation = 0;
+
+#include "A3A_SETUP\a3a_header.hpp"
+#include "mission_description.hpp"
+#include "A3A_SETUP\a3a_parameters.hpp"
+
+class A3A_MissionParams {
+	#include "mission_parameters.hpp"
+};
+
+class CfgFunctions
+{
+    class mis
+    {
+        class Main
+        {
+            file="mis_funcs";
+            class preinit
+            {
+                preInit=1;
+                postInit=0;
+            };
+
+        };
+    };
+};
+
+class RscText;
+class RscEdit;
+class RscButton;
+
+class CodeInputDialog {
+    idd = -1;
+    movingEnable = false;
+    enableSimulation = true;
+
+    class controls {
+        class Background: RscText {
+            idc = -1;
+            x = 0.4; y = 0.4;
+            w = 0.2; h = 0.2;
+            colorBackground[] = {0, 0, 0, 0.7};
+        };
+
+        class CodeEdit: RscEdit {
+            idc = 1337;
+            x = 0.425; y = 0.45;
+            w = 0.15; h = 0.04;
+        };
+
+        class SubmitButton: RscButton {
+            idc = -1;
+            text = "Submit";
+            x = 0.45; y = 0.5;
+            w = 0.1; h = 0.04;
+            action = "enteredCode = ctrlText 1337; closeDialog 0;";
+        };
+    };
+};
