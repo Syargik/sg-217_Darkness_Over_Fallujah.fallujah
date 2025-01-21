@@ -1,5 +1,6 @@
 [] execVM "scripts\cams.sqf";
 [] execVM "scripts\levers.sqf";
+[] execVM "scripts\lamps.sqf";
 
 player createDiaryRecord ["diary", ["Форма сторон", loadFile "A3A_BRIEFING\briefing_UNIFORMS.html"]];
 

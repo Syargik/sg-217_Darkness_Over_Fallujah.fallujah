@@ -4,9 +4,9 @@ _unit addBackpack "B_Carryall_Base";
 
 // Weapons with attachments:
 
-_unit addItem "rhs_10Rnd_762x54mmR_7N1";
+_unit addItem "rhs_10Rnd_762x54mmR_7N14";
 _unit addWeapon "rhs_weap_svdp";
-_unit addPrimaryWeaponItem "rhs_acc_pso1m2";
+_unit addPrimaryWeaponItem "rhs_acc_1pn93_1";
 
 removeBackpack _unit;
 

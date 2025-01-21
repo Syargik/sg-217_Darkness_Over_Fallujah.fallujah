@@ -6,7 +6,7 @@ _unit addBackpack "B_Carryall_Base";
 
 _unit addItem "BWA3_200Rnd_556x45";
 _unit addWeapon "BWA3_MG4";
-_unit addPrimaryWeaponItem "rhsusf_acc_ACOG";
+_unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
 
 removeBackpack _unit;
 

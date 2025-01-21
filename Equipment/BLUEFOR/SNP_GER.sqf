@@ -6,7 +6,7 @@ _unit addBackpack "B_Carryall_Base";
 
 _unit addItem "mkk_20Rnd_M80A1_762x51_HK417_D";
 _unit addWeapon "mkk_arifle_HK417_20_Desert";
-_unit addPrimaryWeaponItem "BWA3_optic_PMII_ShortdotCC";
+_unit addPrimaryWeaponItem "rhsusf_acc_su230a";
 _unit addPrimaryWeaponItem "BWA3_bipod_Harris_tan";
 
 removeBackpack _unit;

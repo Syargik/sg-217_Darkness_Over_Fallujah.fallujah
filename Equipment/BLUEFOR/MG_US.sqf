@@ -7,7 +7,7 @@ _unit addBackpack "B_Carryall_Base";
 _unit addItem "rhsusf_200Rnd_556x45_box";
 _unit addWeapon "rhs_weap_m249_pip_S";
 _unit addPrimaryWeaponItem "mkk_hlc_muzzle_SF3P_556";
-_unit addPrimaryWeaponItem "rhsusf_acc_ACOG";
+_unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
 _unit addPrimaryWeaponItem "rhsusf_acc_saw_bipod";
 
 removeBackpack _unit;
