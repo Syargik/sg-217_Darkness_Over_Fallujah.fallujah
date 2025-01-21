@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5345.0088,184.18539,5143.749};
-		dir[]={0.66560429,-0.27892455,0.69222665};
-		up[]={0.1933268,0.96031147,0.20105959};
-		aside[]={0.72083229,-3.783498e-08,-0.69310999};
+		pos[]={2919.876,19.826647,5562.0405};
+		dir[]={-0.39076781,-0.88073111,-0.26764178};
+		up[]={-0.72663617,0.47361514,-0.49768239};
+		aside[]={-0.56508166,-1.0972144e-07,0.82504308};
 	};
 };
 binarizationWanted=0;
@@ -11943,15 +11943,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2914.0762,6.9814558,5558.7739};
-						angles[]={0,1.1763897,0};
+						position[]={2914.0759,6.9814558,5558.7739};
+						angles[]={0,1.1763868,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
 						init="[this,""OPFOR"",""TL_SPN""] call SerP_unitprocessor;";
-						description="2. Заместитель командира разведовательного отделения";
+						description="2. Заместитель командира разведывательного отделения";
 						isPlayable=1;
 						class Inventory
 						{
@@ -12269,15 +12269,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4996.1133,6.9914474,5935.9023};
-						angles[]={0,1.4864432,0};
+						position[]={4996.1128,6.9914474,5935.9028};
+						angles[]={0,1.4864446,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
 						init="[this,""OPFOR"",""TL_SPN""] call SerP_unitprocessor;";
-						description="2. Заместитель командира разведовательного отделения";
+						description="2. Заместитель командира разведывательного отделения";
 						isPlayable=1;
 						class Inventory
 						{
@@ -12595,15 +12595,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6828.7319,7.0014391,6045.3984};
-						angles[]={0,4.5427666,0};
+						position[]={6828.7319,7.0014391,6045.3989};
+						angles[]={0,4.5427604,0};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
 						init="[this,""OPFOR"",""TL_SPN""] call SerP_unitprocessor;";
-						description="2. Заместитель командира разведовательного отделения";
+						description="2. Заместитель командира разведывательного отделения";
 						isPlayable=1;
 						class Inventory
 						{
