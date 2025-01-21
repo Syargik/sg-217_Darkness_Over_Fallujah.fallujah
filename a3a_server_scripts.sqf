@@ -22,6 +22,6 @@ missionNamespace setVariable ["a3a_endMissionTime", 7200, true]; // 7200 - вр�
 
 		if (missionNamespace getVariable 'code_status' == 1) then {
 			srv_triggerFinished = true;
-		["Повстанцы получили доступ к энергосистеме!", east] call a3a_fnc_endMission;};
+		["Террористы получили доступ к энергосистеме!", east] call a3a_fnc_endMission;};
     };
 };

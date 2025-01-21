@@ -4,7 +4,8 @@ _StreetLights = [
     "Land_lampa_ind",
     "Land_lampa_ind_zerb",
     "Land_Lampa_sidl",
-    "Land_Lampa_sidl_3"
+    "Land_Lampa_sidl_3",
+    "Land_Ind_Mlyn_04"
 ];
 
 // Найти все объекты указанных классов в радиусе 10000 метров от игрока
