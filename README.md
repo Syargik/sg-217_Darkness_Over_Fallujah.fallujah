@@ -1,4 +1,4 @@
-[IMAGES]([url](https://drive.google.com/drive/folders/19LweGt_DtZcaO1LrQL6JPXNI5h7dqkUV?usp=sharing))
+[IMAGES](https://drive.google.com/drive/folders/19LweGt_DtZcaO1LrQL6JPXNI5h7dqkUV?usp=sharing)
 
 v1
 
