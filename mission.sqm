@@ -8,7 +8,7 @@ class EditorData
 	toggles=545;
 	class ItemIDProvider
 	{
-		nextID=632;
+		nextID=641;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2919.876,19.826647,5562.0405};
-		dir[]={-0.39076781,-0.88073111,-0.26764178};
-		up[]={-0.72663617,0.47361514,-0.49768239};
-		aside[]={-0.56508166,-1.0972144e-07,0.82504308};
+		pos[]={5735.042,23.919287,9923.2012};
+		dir[]={-0.48317072,-0.51084942,-0.71104079};
+		up[]={-0.28711879,0.85967016,-0.42252806};
+		aside[]={-0.82710874,0,0.56204194};
 	};
 };
 binarizationWanted=0;
-sourceName="sg@212_Darkness_Over_Fallujah";
+sourceName="sg@217_Darkness_Over_Fallujah";
 addons[]=
 {
 	"A3_Ui_F",
@@ -42,14 +42,14 @@ addons[]=
 	"mkk_rhs_afrf_fix",
 	"rhsusf_c_Cougar",
 	"mkk_3den_usaf_fix",
-	"mkk_ger_vehicles_c",
 	"mkk_cup_vehicles",
 	"rhsusf_c_Caiman",
 	"mkk_rhs_other_vehicle",
 	"A3_Weapons_F_Ammoboxes",
 	"A3A_Modules",
 	"mkk_arty",
-	"A3_Structures_F_Furniture"
+	"A3_Structures_F_Furniture",
+	"mkk_ger_vehicles_c"
 };
 class AddonsMetaData
 {
@@ -127,43 +127,43 @@ class AddonsMetaData
 		};
 		class Item11
 		{
-			className="mkk_ger_vehicles_c";
-			name="mkk_ger_vehicles_c";
-		};
-		class Item12
-		{
 			className="mkk_cup_vehicles";
 			name="mkk_cup_vehicles";
 		};
-		class Item13
+		class Item12
 		{
 			className="rhsusf_c_Caiman";
 			name="Caiman MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item14
+		class Item13
 		{
 			className="mkk_rhs_other_vehicle";
 			name="mkk_rhs_other_vehicle";
 		};
-		class Item15
+		class Item14
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item15
 		{
 			className="A3A_Modules";
 			name="A3A_Modules";
 			author="Blender";
 		};
-		class Item17
+		class Item16
 		{
 			className="mkk_arty";
 			name="mkk_arty";
+		};
+		class Item17
+		{
+			className="mkk_ger_vehicles_c";
+			name="mkk_ger_vehicles_c";
 		};
 	};
 };
@@ -268,11 +268,11 @@ class Mission
 	{
 		overviewText="Террористическая группировка ""Феникс"" vs Объединённые силы ООН";
 		timeOfChanges=1800.0002;
-		startWeather=1;
+		startWeather=0;
 		startFog=0.0099999998;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=1;
+		forecastWeather=0;
 		forecastFog=0.0099999998;
 		forecastWind=0.1;
 		forecastWaves=0.1;
@@ -292,7 +292,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=192;
+		items=191;
 		class Item0
 		{
 			dataType="Marker";
@@ -15502,902 +15502,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5466.5449,8.6623468,4004.3447};
-				angles[]={0,4.6278453,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				lock="UNLOCKED";
-				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
-				textures="Tropen";
-			};
-			id=496;
-			type="mkk_Tank_LKW_leicht_gl_Wolf_FJg";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="VehicleCustomization";
-					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=2;
-								class Item0
-								{
-									class data
-									{
-										singleType="ARRAY";
-										class value
-										{
-											items=2;
-											class Item0
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Tropen";
-												};
-											};
-											class Item1
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1;
-												};
-											};
-										};
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="ARRAY";
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_repair_editorLoadedWheels";
-					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=5;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_cargo_space";
-					expression="[_this, _value] call ace_cargo_fnc_setSpace";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=8;
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item119
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5473.3198,8.6623468,4004.9646};
-				angles[]={0,4.6278453,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				lock="UNLOCKED";
-				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
-				textures="Tropen";
-			};
-			id=497;
-			type="mkk_Tank_LKW_leicht_gl_Wolf_FJg";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="VehicleCustomization";
-					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=2;
-								class Item0
-								{
-									class data
-									{
-										singleType="ARRAY";
-										class value
-										{
-											items=2;
-											class Item0
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Tropen";
-												};
-											};
-											class Item1
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1;
-												};
-											};
-										};
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="ARRAY";
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_repair_editorLoadedWheels";
-					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=5;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_cargo_space";
-					expression="[_this, _value] call ace_cargo_fnc_setSpace";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=8;
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item120
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5499.8369,8.6623468,4007.8992};
-				angles[]={0,4.6278453,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				lock="UNLOCKED";
-				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
-				textures="Tropen";
-			};
-			id=498;
-			type="mkk_Tank_LKW_leicht_gl_Wolf_FJg";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="VehicleCustomization";
-					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=2;
-								class Item0
-								{
-									class data
-									{
-										singleType="ARRAY";
-										class value
-										{
-											items=2;
-											class Item0
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Tropen";
-												};
-											};
-											class Item1
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1;
-												};
-											};
-										};
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="ARRAY";
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_repair_editorLoadedWheels";
-					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=5;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_cargo_space";
-					expression="[_this, _value] call ace_cargo_fnc_setSpace";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=8;
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item121
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5506.6118,8.6623468,4008.519};
-				angles[]={0,4.6278453,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				lock="UNLOCKED";
-				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
-				textures="Tropen";
-			};
-			id=499;
-			type="mkk_Tank_LKW_leicht_gl_Wolf_FJg";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="VehicleCustomization";
-					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=2;
-								class Item0
-								{
-									class data
-									{
-										singleType="ARRAY";
-										class value
-										{
-											items=2;
-											class Item0
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Tropen";
-												};
-											};
-											class Item1
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1;
-												};
-											};
-										};
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="ARRAY";
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_repair_editorLoadedWheels";
-					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=5;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_cargo_space";
-					expression="[_this, _value] call ace_cargo_fnc_setSpace";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=8;
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item122
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5538.3047,8.6623468,4011.1802};
-				angles[]={0,4.6278453,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				lock="UNLOCKED";
-				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
-				textures="Tropen";
-			};
-			id=500;
-			type="mkk_Tank_LKW_leicht_gl_Wolf_FJg";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="VehicleCustomization";
-					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=2;
-								class Item0
-								{
-									class data
-									{
-										singleType="ARRAY";
-										class value
-										{
-											items=2;
-											class Item0
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Tropen";
-												};
-											};
-											class Item1
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1;
-												};
-											};
-										};
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="ARRAY";
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_repair_editorLoadedWheels";
-					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=5;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_cargo_space";
-					expression="[_this, _value] call ace_cargo_fnc_setSpace";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=8;
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item123
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5545.0796,8.6623468,4011.8};
-				angles[]={0,4.6278453,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				lock="UNLOCKED";
-				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
-				textures="Tropen";
-			};
-			id=501;
-			type="mkk_Tank_LKW_leicht_gl_Wolf_FJg";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="VehicleCustomization";
-					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=2;
-								class Item0
-								{
-									class data
-									{
-										singleType="ARRAY";
-										class value
-										{
-											items=2;
-											class Item0
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Tropen";
-												};
-											};
-											class Item1
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1;
-												};
-											};
-										};
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="ARRAY";
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_repair_editorLoadedWheels";
-					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=5;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_cargo_space";
-					expression="[_this, _value] call ace_cargo_fnc_setSpace";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=8;
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item124
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5592.0068,8.6623468,4015.7559};
-				angles[]={0,4.6278453,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				lock="UNLOCKED";
-				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
-				textures="Tropen";
-			};
-			id=502;
-			type="mkk_Tank_LKW_leicht_gl_Wolf_FJg";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="VehicleCustomization";
-					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=2;
-								class Item0
-								{
-									class data
-									{
-										singleType="ARRAY";
-										class value
-										{
-											items=2;
-											class Item0
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Tropen";
-												};
-											};
-											class Item1
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1;
-												};
-											};
-										};
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="ARRAY";
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_repair_editorLoadedWheels";
-					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=5;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_cargo_space";
-					expression="[_this, _value] call ace_cargo_fnc_setSpace";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=8;
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item125
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5598.7817,8.6623468,4016.3757};
-				angles[]={0,4.6278453,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				lock="UNLOCKED";
-				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
-				textures="Tropen";
-			};
-			id=503;
-			type="mkk_Tank_LKW_leicht_gl_Wolf_FJg";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="VehicleCustomization";
-					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-					class Value
-					{
-						class data
-						{
-							singleType="ARRAY";
-							class value
-							{
-								items=2;
-								class Item0
-								{
-									class data
-									{
-										singleType="ARRAY";
-										class value
-										{
-											items=2;
-											class Item0
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Tropen";
-												};
-											};
-											class Item1
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1;
-												};
-											};
-										};
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										singleType="ARRAY";
-									};
-								};
-							};
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_repair_editorLoadedWheels";
-					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=5;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_cargo_space";
-					expression="[_this, _value] call ace_cargo_fnc_setSpace";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=8;
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item126
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={4849.2231,8.0265789,3604.0044};
 				angles[]={0,4.6275487,0};
 			};
@@ -16506,7 +15610,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item127
+		class Item119
 		{
 			dataType="Object";
 			class PositionInfo
@@ -16626,7 +15730,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item128
+		class Item120
 		{
 			dataType="Object";
 			class PositionInfo
@@ -16823,7 +15927,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item129
+		class Item121
 		{
 			dataType="Object";
 			class PositionInfo
@@ -17020,7 +16124,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item130
+		class Item122
 		{
 			dataType="Object";
 			class PositionInfo
@@ -17217,7 +16321,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item131
+		class Item123
 		{
 			dataType="Object";
 			class PositionInfo
@@ -17414,7 +16518,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item132
+		class Item124
 		{
 			dataType="Object";
 			class PositionInfo
@@ -17611,7 +16715,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item133
+		class Item125
 		{
 			dataType="Object";
 			class PositionInfo
@@ -17808,7 +16912,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item134
+		class Item126
 		{
 			dataType="Object";
 			class PositionInfo
@@ -18005,7 +17109,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item135
+		class Item127
 		{
 			dataType="Object";
 			class PositionInfo
@@ -18202,7 +17306,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item136
+		class Item128
 		{
 			dataType="Object";
 			class PositionInfo
@@ -18399,7 +17503,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item137
+		class Item129
 		{
 			dataType="Object";
 			class PositionInfo
@@ -18596,7 +17700,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item138
+		class Item130
 		{
 			dataType="Object";
 			class PositionInfo
@@ -18793,7 +17897,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item139
+		class Item131
 		{
 			dataType="Object";
 			class PositionInfo
@@ -18990,7 +18094,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item140
+		class Item132
 		{
 			dataType="Object";
 			class PositionInfo
@@ -19187,7 +18291,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item141
+		class Item133
 		{
 			dataType="Object";
 			class PositionInfo
@@ -19384,7 +18488,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item142
+		class Item134
 		{
 			dataType="Object";
 			class PositionInfo
@@ -19581,7 +18685,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item143
+		class Item135
 		{
 			dataType="Object";
 			class PositionInfo
@@ -19778,7 +18882,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item144
+		class Item136
 		{
 			dataType="Object";
 			class PositionInfo
@@ -19975,7 +19079,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item145
+		class Item137
 		{
 			dataType="Object";
 			class PositionInfo
@@ -20172,7 +19276,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item146
+		class Item138
 		{
 			dataType="Object";
 			class PositionInfo
@@ -20369,7 +19473,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item147
+		class Item139
 		{
 			dataType="Object";
 			class PositionInfo
@@ -20566,7 +19670,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item148
+		class Item140
 		{
 			dataType="Object";
 			class PositionInfo
@@ -20763,7 +19867,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item149
+		class Item141
 		{
 			dataType="Object";
 			class PositionInfo
@@ -20960,7 +20064,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item150
+		class Item142
 		{
 			dataType="Object";
 			class PositionInfo
@@ -21237,7 +20341,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item151
+		class Item143
 		{
 			dataType="Object";
 			class PositionInfo
@@ -21514,7 +20618,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item152
+		class Item144
 		{
 			dataType="Object";
 			class PositionInfo
@@ -21791,7 +20895,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item153
+		class Item145
 		{
 			dataType="Object";
 			class PositionInfo
@@ -21838,7 +20942,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item154
+		class Item146
 		{
 			dataType="Object";
 			class PositionInfo
@@ -21885,7 +20989,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item155
+		class Item147
 		{
 			dataType="Object";
 			class PositionInfo
@@ -21932,7 +21036,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item156
+		class Item148
 		{
 			dataType="Marker";
 			position[]={6953.6621,7,6016.918};
@@ -21941,7 +21045,7 @@ class Mission
 			colorName="ColorGreen";
 			id=539;
 		};
-		class Item157
+		class Item149
 		{
 			dataType="Marker";
 			position[]={7148.5449,7,6101.5859};
@@ -21950,7 +21054,7 @@ class Mission
 			colorName="ColorRed";
 			id=540;
 		};
-		class Item158
+		class Item150
 		{
 			dataType="Marker";
 			position[]={2965.1807,6.9800172,5249.0361};
@@ -21959,7 +21063,7 @@ class Mission
 			colorName="ColorBlue";
 			id=541;
 		};
-		class Item159
+		class Item151
 		{
 			dataType="Marker";
 			position[]={3045.2764,6.9907308,5047.1094};
@@ -21968,7 +21072,7 @@ class Mission
 			colorName="ColorBlue";
 			id=542;
 		};
-		class Item160
+		class Item152
 		{
 			dataType="Marker";
 			position[]={3070.3394,6.9907308,4864.165};
@@ -21977,7 +21081,7 @@ class Mission
 			colorName="ColorBlue";
 			id=543;
 		};
-		class Item161
+		class Item153
 		{
 			dataType="Marker";
 			position[]={3098.3501,6.9907308,4763.8398};
@@ -21986,7 +21090,7 @@ class Mission
 			colorName="ColorBlue";
 			id=544;
 		};
-		class Item162
+		class Item154
 		{
 			dataType="Marker";
 			position[]={3238.4063,6.9907308,4777.1182};
@@ -21995,7 +21099,7 @@ class Mission
 			colorName="ColorBlue";
 			id=545;
 		};
-		class Item163
+		class Item155
 		{
 			dataType="Marker";
 			position[]={3323.9141,6.9907308,4449.5874};
@@ -22004,7 +21108,7 @@ class Mission
 			colorName="ColorBlue";
 			id=546;
 		};
-		class Item164
+		class Item156
 		{
 			dataType="Marker";
 			position[]={3333.7498,6.9907308,4364.709};
@@ -22013,7 +21117,7 @@ class Mission
 			colorName="ColorBlue";
 			id=547;
 		};
-		class Item165
+		class Item157
 		{
 			dataType="Marker";
 			position[]={3464.1333,6.9907308,4400.9644};
@@ -22022,7 +21126,7 @@ class Mission
 			colorName="ColorBlue";
 			id=548;
 		};
-		class Item166
+		class Item158
 		{
 			dataType="Marker";
 			position[]={4510.9966,6.9907308,2882.7625};
@@ -22031,7 +21135,7 @@ class Mission
 			colorName="ColorBlue";
 			id=549;
 		};
-		class Item167
+		class Item159
 		{
 			dataType="Marker";
 			position[]={4420.7754,6.9907308,2949.4976};
@@ -22040,7 +21144,7 @@ class Mission
 			colorName="ColorBlue";
 			id=550;
 		};
-		class Item168
+		class Item160
 		{
 			dataType="Marker";
 			position[]={4327.938,6.9907308,3107.8301};
@@ -22049,7 +21153,7 @@ class Mission
 			colorName="ColorBlue";
 			id=551;
 		};
-		class Item169
+		class Item161
 		{
 			dataType="Marker";
 			position[]={4198.4893,6.9907308,3293.6421};
@@ -22058,7 +21162,7 @@ class Mission
 			colorName="ColorBlue";
 			id=552;
 		};
-		class Item170
+		class Item162
 		{
 			dataType="Marker";
 			position[]={4104.3447,6.9907308,3453.2832};
@@ -22067,7 +21171,7 @@ class Mission
 			colorName="ColorBlue";
 			id=553;
 		};
-		class Item171
+		class Item163
 		{
 			dataType="Marker";
 			position[]={3967.0503,6.9907308,3696.6699};
@@ -22076,7 +21180,7 @@ class Mission
 			colorName="ColorBlue";
 			id=554;
 		};
-		class Item172
+		class Item164
 		{
 			dataType="Marker";
 			position[]={3857.2148,6.9907308,3855.002};
@@ -22085,7 +21189,7 @@ class Mission
 			colorName="ColorBlue";
 			id=555;
 		};
-		class Item173
+		class Item165
 		{
 			dataType="Marker";
 			position[]={3717.3057,6.9907308,4044.7393};
@@ -22094,7 +21198,7 @@ class Mission
 			colorName="ColorBlue";
 			id=556;
 		};
-		class Item174
+		class Item166
 		{
 			dataType="Marker";
 			position[]={3326.9756,6.9907308,4382.7856};
@@ -22103,7 +21207,7 @@ class Mission
 			colorName="ColorBlue";
 			id=559;
 		};
-		class Item175
+		class Item167
 		{
 			dataType="Marker";
 			position[]={3672.009,6.9907308,4050.6685};
@@ -22112,7 +21216,7 @@ class Mission
 			colorName="ColorBlue";
 			id=560;
 		};
-		class Item176
+		class Item168
 		{
 			dataType="Marker";
 			position[]={3772.6094,6.9907308,3849.8547};
@@ -22121,7 +21225,7 @@ class Mission
 			colorName="ColorBlue";
 			id=561;
 		};
-		class Item177
+		class Item169
 		{
 			dataType="Marker";
 			position[]={4576.4277,6.9907308,2736.0693};
@@ -22130,7 +21234,7 @@ class Mission
 			colorName="ColorBlue";
 			id=562;
 		};
-		class Item178
+		class Item170
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -22140,7 +21244,7 @@ class Mission
 			id=563;
 			type="A3A_NoFreezeVehicles";
 		};
-		class Item179
+		class Item171
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -22167,59 +21271,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item180
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5714.5459,8.9401751,9884.4004};
-				angles[]={0,2.398344,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				lock="UNLOCKED";
-				init="[this,""OPFOR"",""HELI""] call SerP_vehprocessor; " \n "[this,""HeliCrew"", ""all""] call compile preprocessFileLineNumbers ""bn_crew_control.sqf"";";
-				reportRemoteTargets=1;
-				receiveRemoteTargets=1;
-				reportOwnPosition=1;
-				pylons="rhs_mag_M229_7;rhs_mag_m134_pylon_3000;rhs_mag_m134_pylon_3000;rhs_mag_M229_7;";
-			};
-			id=593;
-			type="RHS_AH6M_R";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="rhs_MELB_TailNumber";
-					expression="if(_value != 'NoChange')then{ [_this,'d_SN',_value] call RHS_MELB_fnc_tailNumber}";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="NoChange";
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item181
+		class Item172
 		{
 			dataType="Group";
 			side="East";
@@ -22336,7 +21388,7 @@ class Mission
 			};
 			id=595;
 		};
-		class Item182
+		class Item173
 		{
 			dataType="Group";
 			side="East";
@@ -22506,7 +21558,7 @@ class Mission
 			};
 			id=599;
 		};
-		class Item183
+		class Item174
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -22585,7 +21637,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item184
+		class Item175
 		{
 			dataType="Marker";
 			position[]={2889.4946,6.9800172,5435.915};
@@ -22594,7 +21646,7 @@ class Mission
 			colorName="ColorBlue";
 			id=607;
 		};
-		class Item185
+		class Item176
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22606,6 +21658,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				lock="UNLOCKED";
 				init="[this,""OPFOR"",""ARTL""] call SerP_vehprocessor;";
 				textures="Desert";
 			};
@@ -22776,7 +21829,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item186
+		class Item177
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22792,7 +21845,7 @@ class Mission
 			id=616;
 			type="mkk_m252_box";
 		};
-		class Item187
+		class Item178
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22808,7 +21861,7 @@ class Mission
 			id=617;
 			type="mkk_81mm_shells_box_large";
 		};
-		class Item188
+		class Item179
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22824,7 +21877,7 @@ class Mission
 			id=618;
 			type="mkk_81mm_shells_box_large";
 		};
-		class Item189
+		class Item180
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22840,23 +21893,7 @@ class Mission
 			id=619;
 			type="mkk_81mm_shells_box_large";
 		};
-		class Item190
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5628.7363,7.2986131,9885.1221};
-				angles[]={0,3.9246922,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=620;
-			type="mkk_81mm_illum_box_large";
-		};
-		class Item191
+		class Item181
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22872,6 +21909,954 @@ class Mission
 			id=125;
 			type="Land_TableDesk_F";
 			atlOffset=6.5304985;
+		};
+		class Item182
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5545.0796,8.6623468,4011.8};
+				angles[]={0,4.6278453,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
+				textures="Tropen";
+			};
+			id=632;
+			type="mkk_Tank_LKW_leicht_gl_Wolf_FueFu";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Tropen";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="ARRAY";
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_repair_editorLoadedWheels";
+					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=5;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_cargo_space";
+					expression="[_this, _value] call ace_cargo_fnc_setSpace";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=8;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item183
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5506.6118,8.6623468,4008.519};
+				angles[]={0,4.6278453,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
+				textures="Tropen";
+			};
+			id=633;
+			type="mkk_Tank_LKW_leicht_gl_Wolf_FueFu";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Tropen";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="ARRAY";
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_repair_editorLoadedWheels";
+					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=5;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_cargo_space";
+					expression="[_this, _value] call ace_cargo_fnc_setSpace";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=8;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item184
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5598.7817,8.6623468,4016.3757};
+				angles[]={0,4.6278453,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
+				textures="Tropen";
+			};
+			id=634;
+			type="mkk_Tank_LKW_leicht_gl_Wolf_FueFu";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Tropen";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="ARRAY";
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_repair_editorLoadedWheels";
+					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=5;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_cargo_space";
+					expression="[_this, _value] call ace_cargo_fnc_setSpace";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=8;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item185
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5592.0068,8.6623468,4015.7559};
+				angles[]={0,4.6278453,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
+				textures="Tropen";
+			};
+			id=635;
+			type="mkk_Tank_LKW_leicht_gl_Wolf_FueFu";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Tropen";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="ARRAY";
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_repair_editorLoadedWheels";
+					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=5;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_cargo_space";
+					expression="[_this, _value] call ace_cargo_fnc_setSpace";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=8;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item186
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5538.3047,8.6623468,4011.1802};
+				angles[]={0,4.6278453,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
+				textures="Tropen";
+			};
+			id=636;
+			type="mkk_Tank_LKW_leicht_gl_Wolf_FueFu";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Tropen";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="ARRAY";
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_repair_editorLoadedWheels";
+					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=5;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_cargo_space";
+					expression="[_this, _value] call ace_cargo_fnc_setSpace";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=8;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item187
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5499.8369,8.6623468,4007.8992};
+				angles[]={0,4.6278453,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
+				textures="Tropen";
+			};
+			id=637;
+			type="mkk_Tank_LKW_leicht_gl_Wolf_FueFu";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Tropen";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="ARRAY";
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_repair_editorLoadedWheels";
+					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=5;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_cargo_space";
+					expression="[_this, _value] call ace_cargo_fnc_setSpace";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=8;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item188
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5466.5449,8.6623468,4004.3447};
+				angles[]={0,4.6278453,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
+				textures="Tropen";
+			};
+			id=638;
+			type="mkk_Tank_LKW_leicht_gl_Wolf_FueFu";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Tropen";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="ARRAY";
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_repair_editorLoadedWheels";
+					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=5;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_cargo_space";
+					expression="[_this, _value] call ace_cargo_fnc_setSpace";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=8;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item189
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5473.3198,8.6623468,4004.9646};
+				angles[]={0,4.6278453,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="[this,""BLUEFOR"",""GER""] call SerP_vehprocessor;";
+				textures="Tropen";
+			};
+			id=639;
+			type="mkk_Tank_LKW_leicht_gl_Wolf_FueFu";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Tropen";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="ARRAY";
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_repair_editorLoadedWheels";
+					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=5;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_cargo_space";
+					expression="[_this, _value] call ace_cargo_fnc_setSpace";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=8;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item190
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5714.5459,8.9401751,9884.4004};
+				angles[]={0,2.398344,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="[this,""OPFOR"",""HELI""] call SerP_vehprocessor; " \n "[this,""HeliCrew"", ""all""] call compile preprocessFileLineNumbers ""bn_crew_control.sqf"";";
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				pylons="rhs_mag_M229_7;rhs_mag_m134_pylon_3000;rhs_mag_m134_pylon_3000;rhs_mag_M229_7;";
+			};
+			id=640;
+			type="RHS_MELB_MH6M_R";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_MELB_TailNumber";
+					expression="if(_value != 'NoChange')then{ [_this,'d_SN',_value] call RHS_MELB_fnc_tailNumber}";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="NoChange";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 	class Connections
@@ -23296,7 +23281,7 @@ class Mission
 			class Item41
 			{
 				linkID=41;
-				item0=496;
+				item0=638;
 				item1=563;
 				class CustomData
 				{
@@ -23306,7 +23291,7 @@ class Mission
 			class Item42
 			{
 				linkID=42;
-				item0=497;
+				item0=639;
 				item1=563;
 				class CustomData
 				{
@@ -23316,7 +23301,7 @@ class Mission
 			class Item43
 			{
 				linkID=43;
-				item0=498;
+				item0=637;
 				item1=563;
 				class CustomData
 				{
@@ -23326,7 +23311,7 @@ class Mission
 			class Item44
 			{
 				linkID=44;
-				item0=499;
+				item0=633;
 				item1=563;
 				class CustomData
 				{
@@ -23336,7 +23321,7 @@ class Mission
 			class Item45
 			{
 				linkID=45;
-				item0=500;
+				item0=636;
 				item1=563;
 				class CustomData
 				{
@@ -23346,7 +23331,7 @@ class Mission
 			class Item46
 			{
 				linkID=46;
-				item0=501;
+				item0=632;
 				item1=563;
 				class CustomData
 				{
@@ -23356,7 +23341,7 @@ class Mission
 			class Item47
 			{
 				linkID=47;
-				item0=502;
+				item0=635;
 				item1=563;
 				class CustomData
 				{
@@ -23366,7 +23351,7 @@ class Mission
 			class Item48
 			{
 				linkID=48;
-				item0=503;
+				item0=634;
 				item1=563;
 				class CustomData
 				{
@@ -23397,7 +23382,7 @@ class Mission
 			{
 				linkID=51;
 				item0=605;
-				item1=593;
+				item1=640;
 				class CustomData
 				{
 					type="Sync";
