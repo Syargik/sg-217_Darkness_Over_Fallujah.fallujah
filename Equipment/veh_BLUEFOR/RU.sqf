@@ -19,4 +19,3 @@ _veh addItemCargoGlobal ['rhs_100Rnd_762x54mmR_green', 2];
 _veh addItemCargoGlobal ['rhs_VOG25', 15];
 
 _veh addBackpackCargoGlobal ['B_AssaultPack_mcamo', 2];
-_veh addBackpackCargoGlobal ['TRU_PRC119_Mixed', 1];

@@ -8,8 +8,6 @@
         cam attachTo [media1, [0, 0, 0.3]]; // media1 - назавние переменной объекта, к которому будет прикреплена камера
         if ((player distance display) < 10) then {
             hint "Камера 1";
-            sleep 5;
-            hintSilent "";
         };
         cam camSetFov 0.5; // FOV камеры
         cam camSetTarget [5611.729, 1700.190, 5.343]; // Позиция x,y,z куда будет смотреть камера
@@ -29,8 +27,6 @@
         cam attachTo [media2, [0, 0, 0]];
         if ((player distance display) < 10) then {
             hint "Камера 2";
-            sleep 5;
-            hintSilent "";
         };
         cam camSetFov 0.5;
         cam camSetTarget [5926.74, 1415.95, 4.856];
@@ -50,8 +46,6 @@
         cam attachTo [media3, [0, 0, 0.3]];
         if ((player distance display) < 10) then {
             hint "Камера 3";
-            sleep 5;
-            hintSilent "";
         };
         cam camSetFov 0.5;
         cam camSetTarget [5307.204, 2131.942, 5.343];
@@ -71,8 +65,6 @@
         cam attachTo [media4, [0, 0, 0.3]];
         if ((player distance display) < 10) then {
             hint "Камера 4";
-            sleep 5;
-            hintSilent "";
         };
         cam camSetFov 0.5;
         cam camSetTarget [3566.198, 1990.62, 4.812];

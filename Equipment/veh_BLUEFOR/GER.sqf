@@ -18,4 +18,3 @@ _veh addItemCargoGlobal ['mkk_20Rnd_M80A1_762x51_HK417_D', 10];
 _veh addItemCargoGlobal ['rhs_mag_M441_HE', 15];
 
 _veh addBackpackCargoGlobal ['B_AssaultPack_mcamo', 2];
-_veh addBackpackCargoGlobal ['TRU_PRC119_Mixed', 1];

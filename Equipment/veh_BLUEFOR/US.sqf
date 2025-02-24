@@ -17,4 +17,3 @@ _veh addItemCargoGlobal ['rhsusf_200rnd_556x45_mixed_box', 2];
 _veh addItemCargoGlobal ['rhs_mag_M441_HE', 15];
 
 _veh addBackpackCargoGlobal ['B_AssaultPack_mcamo', 2];
-_veh addBackpackCargoGlobal ['TRU_PRC119_Mixed', 1];
