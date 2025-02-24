@@ -21,4 +21,3 @@ _veh addItemCargoGlobal ['rhs_weap_rpg26', 2];
 _veh addItemCargoGlobal ['rhs_weap_rshg2', 2];
 
 _veh addBackpackCargoGlobal ['B_AssaultPack_blk', 2];
-_veh addBackpackCargoGlobal ['asip_a_02_cb_r', 1];
