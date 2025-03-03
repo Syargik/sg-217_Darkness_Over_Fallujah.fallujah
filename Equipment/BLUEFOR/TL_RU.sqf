@@ -6,7 +6,7 @@ _unit addBackpack "B_Carryall_Base";
 
 _unit addItem "rhs_30Rnd_545x39_7N10_AK";
 _unit addWeapon "rhs_weap_ak74mr";
-_unit addPrimaryWeaponItem "rhs_acc_dtk";
+_unit addPrimaryWeaponItem "rhs_acc_ak5";
 _unit addPrimaryWeaponItem "mkc_optic_1p86";
 
 removeBackpack _unit;

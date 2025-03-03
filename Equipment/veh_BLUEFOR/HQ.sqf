@@ -22,4 +22,4 @@ _veh addItemCargoGlobal ['MKK_20Rnd_Fury_blk', 10];
 _veh addItemCargoGlobal ['MKK_20Rnd_Fury_RT_blk', 5];
 
 _veh addBackpackCargoGlobal ['B_AssaultPack_mcamo', 2];
-_veh addBackpackCargoGlobal ['TRU_PRC119_Mixed', 2];
+_veh addBackpackCargoGlobal ['csog_p4', 2];

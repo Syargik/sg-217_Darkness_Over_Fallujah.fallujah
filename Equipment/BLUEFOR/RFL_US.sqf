@@ -6,7 +6,7 @@ _unit addBackpack "B_Carryall_Base";
 
 _unit addItem "rhs_mag_30Rnd_556x45_M855A1_PMAG";
 _unit addWeapon "rhs_weap_m4a1_blockII_KAC_bk";
-_unit addPrimaryWeaponItem "mkk_hlc_muzzle_SF3P_556";
+_unit addPrimaryWeaponItem "ACE_muzzle_mzls_L";
 _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
 
 removeBackpack _unit;

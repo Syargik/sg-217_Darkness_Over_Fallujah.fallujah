@@ -5,7 +5,7 @@ _unit addBackpack "B_Carryall_Base";
 // Weapons with attachments:
 
 _unit addItem "rhs_30Rnd_545x39_7N10_AK";
-_unit addWeapon "mkk_hlc_rifle_aek971_mtk";
+_unit addWeapon "nmg_weapons_a545";
 _unit addPrimaryWeaponItem "rhs_acc_pbs4";
 _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
 

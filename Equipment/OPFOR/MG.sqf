@@ -8,6 +8,7 @@ _unit addItem "rhsusf_200Rnd_556x45_box";
 _unit addWeapon "rhs_weap_m249_pip_S";
 _unit addPrimaryWeaponItem "rhsusf_acc_ACOG";
 _unit addPrimaryWeaponItem "rhsusf_acc_saw_bipod";
+_unit addPrimaryWeaponItem "mkk_hlc_muzzle_KX3_comp";
 
 removeBackpack _unit;
 

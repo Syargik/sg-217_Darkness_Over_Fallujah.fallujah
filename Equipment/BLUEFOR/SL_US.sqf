@@ -6,7 +6,7 @@ _unit addBackpack "B_Carryall_Base";
 
 _unit addItem "rhs_mag_30Rnd_556x45_M855A1_PMAG";
 _unit addWeapon "rhs_weap_m4a1_blockII_KAC_bk";
-_unit addPrimaryWeaponItem "mkk_hlc_muzzle_SF3P_556";
+_unit addPrimaryWeaponItem "ACE_muzzle_mzls_L";
 _unit addPrimaryWeaponItem "rhsusf_acc_ACOG";
 
 removeBackpack _unit;
@@ -23,7 +23,7 @@ for '_i' from 1 to 2 do { _unit addItemToVest 'rhs_mag_an_m8hc';};
 _unit addItemToVest "ACE_Flashlight_XL50";
 
 // Backpack with items:
-_unit addBackpack "TRU_PRC119_Mixed";
+_unit addBackpack "csog_p4";
 _unit addHeadgear "PBW_Helm3_UN";
 _unit addWeapon "ACE_NVG_Gen4_Black";
 

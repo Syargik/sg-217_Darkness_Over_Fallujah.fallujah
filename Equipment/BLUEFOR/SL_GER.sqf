@@ -23,7 +23,7 @@ for '_i' from 1 to 2 do { _unit addItemToVest 'rhs_mag_m67';};
 _unit addItemToVest "ACE_Flashlight_XL50";
 
 // Backpack with items:
-_unit addBackpack "TRU_PRC119_Mixed";
+_unit addBackpack "csog_p4";
 _unit addHeadgear "PBW_Helm3_UN";
 _unit addWeapon "ACE_NVG_Gen4_Black";
 

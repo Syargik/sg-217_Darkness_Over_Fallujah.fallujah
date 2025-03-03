@@ -6,7 +6,7 @@ _unit addBackpack "B_Carryall_Base";
 
 _unit addItem "MKK_20Rnd_Fury_blk";
 _unit addWeapon "MKK_XM7_BLK_G";
-_unit addPrimaryWeaponItem "mkk_hlc_muzzle_SF3P_68";
+_unit addPrimaryWeaponItem "ACE_muzzle_mzls_H";
 _unit addPrimaryWeaponItem "rhsusf_acc_eotech_552";
 
 removeBackpack _unit;
